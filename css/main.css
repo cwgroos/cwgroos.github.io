@@ -1,0 +1,18 @@
+#body{
+    background: #3491E3;
+    color: white;
+    font-family: Segoe UI;
+    text-align: center;
+    width: auto;
+    height: auto;
+    /* Main text of the page */
+}
+
+body{
+    background: #3491E3;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
