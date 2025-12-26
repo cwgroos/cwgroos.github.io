@@ -88,6 +88,12 @@ body {
     color: var(--accent);
     text-decoration: none;
     letter-spacing: -0.02em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logo.visible {
+    opacity: 1;
 }
 
 .nav-links {

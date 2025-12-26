@@ -81,15 +81,28 @@ window.addEventListener('scroll', () => {
 });
 
 // ============================================
-// NAVBAR SHADOW ON SCROLL
+// DYNAMIC HEADER LOGO ON SCROLL
 // ============================================
 const navbar = document.querySelector('.navbar');
+const logo = document.querySelector('.logo');
+const heroSection = document.querySelector('.hero');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+    const scrollPosition = window.scrollY + navbar.offsetHeight;
+
+    // Show logo when hero section is scrolled past
+    if (scrollPosition > heroBottom) {
+        logo.textContent = 'Christopher Gross';
+        logo.classList.add('visible');
     } else {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        logo.classList.remove('visible');
+        // Small delay before clearing text to allow fade out
+        setTimeout(() => {
+            if (!logo.classList.contains('visible')) {
+                logo.textContent = '';
+            }
+        }, 300);
     }
 });
 
