@@ -359,10 +359,60 @@ body {
 }
 
 /* ============================================
+   EDUCATION SECTION
+   ============================================ */
+.education {
+    background: var(--bg-secondary);
+}
+
+.education-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-item {
+    background: var(--bg-primary);
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--accent-primary);
+}
+
+.education-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.degree {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.education-date {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* ============================================
    SKILLS SECTION
    ============================================ */
 .skills {
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
 }
 
 .skills-grid {
