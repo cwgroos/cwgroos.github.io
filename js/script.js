@@ -85,14 +85,14 @@ window.addEventListener('scroll', () => {
 // ============================================
 const navbar = document.querySelector('.navbar');
 const logo = document.querySelector('.logo');
-const heroSection = document.querySelector('.hero');
+const heroTitle = document.querySelector('.hero-title');
 
 window.addEventListener('scroll', () => {
-    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-    const scrollPosition = window.scrollY + navbar.offsetHeight;
+    const heroTitleRect = heroTitle.getBoundingClientRect();
+    const navbarHeight = navbar.offsetHeight;
 
-    // Show logo when hero section is scrolled past
-    if (scrollPosition > heroBottom) {
+    // Show logo when hero title scrolls off screen (goes above navbar)
+    if (heroTitleRect.bottom < navbarHeight) {
         logo.textContent = 'Christopher Gross';
         logo.classList.add('visible');
     } else {
