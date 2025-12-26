@@ -1,19 +1,328 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>cwgroos</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Gross - Portfolio</title>
+    <meta name="description" content="Portfolio website of Christopher Gross - Software Engineer showcasing skills, experience, and projects">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
 <body>
-<div id="body">
-    Hello World!<br/>
-    Experiments in web technologies!<br/><br/>
-    <a href="http://instagram.com/cwgroos" target=_blank><i class="fa fa-instagram fa-4x instagram"></i></a>
-    <a href="https://play.spotify.com/user/chris.gross" target=_blank><i class="fa fa-spotify fa-4x spotify"></i></a>
-    <a href="http://twitter.com/cwgroos" target=_blank><i class="fa fa-twitter fa-4x twitter"></i></a>
-    <a href="bart/index.html"><i class="fa fa-code fa-4x experiment"></i></a>
-</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i data-lucide="sun" class="sun-icon"></i>
+                <i data-lucide="moon" class="moon-icon"></i>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Christopher Gross</span>
+                </h1>
+                <p class="hero-subtitle">Engineering Leader | AI & Systems Expert</p>
+                <p class="hero-description">
+                    Engineering leader with nearly 20 years of experience building products at Apple, Google, Fitbit, and Qualcomm. Currently driving AI innovation at Obli AI.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://github.com/cwgroos" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm an engineering leader with a unique blend of deep technical expertise and proven people management skills.
+                        My career spans nearly two decades at industry-leading companies including Apple, Google, Fitbit, and Qualcomm.
+                    </p>
+                    <p>
+                        Currently serving as CTO at Obli AI, I'm driving the development of AI-native agentic products that are transforming
+                        legal compliance and assessment workflows. My experience ranges from low-level firmware and BSP development to
+                        cutting-edge AI systems using RAG, fine-tuning, and agentic architectures.
+                    </p>
+                    <p>
+                        I thrive at the intersection of technology and leadership—whether it's architecting Google's first secure boot process,
+                        optimizing power consumption across Apple's ecosystem, or building high-performing engineering teams that deliver
+                        innovative products to millions of users.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat stat-commits">
+                        <i data-lucide="git-commit" class="stat-icon"></i>
+                        <div class="stat-content">
+                            <div class="stat-number">2,000+</div>
+                            <div class="stat-label">Commits This Year</div>
+                        </div>
+                    </div>
+                    <div class="stat stat-achievements">
+                        <div class="stat-label">GitHub Achievements</div>
+                        <div class="achievement-badges">
+                            <div class="achievement-badge">
+                                <i data-lucide="users" class="achievement-icon"></i>
+                                <span>Pair Extraordinaire ×2</span>
+                            </div>
+                            <div class="achievement-badge">
+                                <i data-lucide="git-pull-request" class="achievement-icon"></i>
+                                <span>Pull Shark ×3</span>
+                            </div>
+                            <div class="achievement-badge">
+                                <i data-lucide="zap" class="achievement-icon"></i>
+                                <span>Quickdraw</span>
+                            </div>
+                            <div class="achievement-badge">
+                                <i data-lucide="rocket" class="achievement-icon"></i>
+                                <span>YOLO</span>
+                            </div>
+                            <div class="achievement-badge">
+                                <i data-lucide="archive" class="achievement-icon"></i>
+                                <span>Arctic Code Vault</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>University of California, San Diego</h3>
+                    <div class="education-details">
+                        <span class="degree">Bachelor of Science in Computer Science</span>
+                        <span class="education-date">Graduated June 2006</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">ARM Assembly</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ARM Cortex-A/M</span>
+                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">iOS/macOS</span>
+                        <span class="skill-tag">RTOS</span>
+                        <span class="skill-tag">Windows</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AI Agents</span>
+                        <span class="skill-tag">RAG/Agentic Retrieval</span>
+                        <span class="skill-tag">Fine-tuning LLMs</span>
+                        <span class="skill-tag">Anthropic</span>
+                        <span class="skill-tag">Gemini</span>
+                        <span class="skill-tag">Weights and Biases</span>
+                        <span class="skill-tag">LlamaIndex</span>
+                        <span class="skill-tag">Pinecone</span>
+                        <span class="skill-tag">Arize</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JTAG (Trace32)</span>
+                        <span class="skill-tag">GDB/LLDB</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Make</span>
+                        <span class="skill-tag">Bazel</span>
+                        <span class="skill-tag">Cursor</span>
+                        <span class="skill-tag">Claude Code</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Sentry</span>
+                        <span class="skill-tag">uv</span>
+                        <span class="skill-tag">Browserbase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Expertise</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">BSP Development</span>
+                        <span class="skill-tag">Firmware</span>
+                        <span class="skill-tag">People Management</span>
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">Cross-functional Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Feb 2025 - Present</div>
+                        <h3>Chief Technology Officer</h3>
+                        <h4>Obli AI - San Diego, CA</h4>
+                        <p>
+                            Driving engineering strategy and technical direction for Obli's suite of AI-native agentic products.
+                        </p>
+                        <ul class="achievement-list">
+                            <li>Leading development of Legal and Compliance Assistant, AI-powered assessments, and AI-enabled website scans</li>
+                            <li>Managing offshore development team; establishing processes and best practices</li>
+                            <li>Collaborating with CEO and UX advisor on product roadmap and prioritization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dec 2023 - Feb 2025</div>
+                        <h3>Power & Performance Engineering Manager</h3>
+                        <h4>Apple - San Diego, CA</h4>
+                        <p>
+                            Led a 7-person team maintaining on-device power/performance telemetry infrastructure across iOS, macOS, and watchOS.
+                        </p>
+                        <ul class="achievement-list">
+                            <li>Delivered actionable insights enabling product teams to optimize power consumption across Apple's ecosystem</li>
+                            <li>Ensured every OS update shipped with user-friendly battery life</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mar 2019 - Dec 2023</div>
+                        <h3>Tech Lead Manager</h3>
+                        <h4>Google - San Diego, CA</h4>
+                        <p>
+                            Led teams on Google Silicon and Android NextGen Systems, driving innovation in hardware and platform development.
+                        </p>
+                        <ul class="achievement-list">
+                            <li>Led 5-person team developing application processor bootchain for Tensor chipsets</li>
+                            <li>Architected Google's first home-grown secure boot process including the first AP Boot ROM</li>
+                            <li>Drove strategic collaboration with Qualcomm on Generic Kernel Image and Project Treble</li>
+                            <li>Accelerated time-to-market for new Qualcomm chipsets through streamlined BSP development</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Feb 2016 - Mar 2019</div>
+                        <h3>UI Engineering Manager</h3>
+                        <h4>Fitbit - San Diego, CA</h4>
+                        <p>
+                            Led the team responsible for Charge 3 UI and architected next-generation tracker frameworks.
+                        </p>
+                        <ul class="achievement-list">
+                            <li>Architected UI framework for next-generation trackers, enabling third-party app ecosystem</li>
+                            <li>Spearheaded on-wrist Fitbit Coach experience for smartwatches</li>
+                            <li>Managed cross-functional collaboration with product, design, and firmware teams</li>
+                            <li>Debugged and resolved critical BLE issues on Fitbit Blaze ensuring smooth product launch</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2006 - Feb 2016</div>
+                        <h3>Senior Staff Engineer</h3>
+                        <h4>Qualcomm - San Diego, CA</h4>
+                        <p>
+                            Managed Windows platform development and led BSP bring-up for Snapdragon chipsets.
+                        </p>
+                        <ul class="achievement-list">
+                            <li>Reduced pre-silicon Windows platform BSP commercialization time by 30%</li>
+                            <li>Led Windows Phone/Windows on ARM bring-up on Snapdragon 800, 810, and 820 series</li>
+                            <li>Supported commercialization for all Windows Phone/ARM Qualcomm BSPs</li>
+                            <li>Executed Qualcomm's ARM64 transition for Windows BSP products</li>
+                            <li>Contributed to initial UEFI specification implementation for Windows 8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        I'm always open to new opportunities and interesting projects.
+                        Feel free to reach out if you'd like to connect!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:christopher.gross@gmail.com" class="contact-method">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                            <span>christopher.gross@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/christopherwgross/" class="contact-method" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="linkedin" class="contact-icon"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/cwgroos" class="contact-method" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="github" class="contact-icon"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Christopher Gross. All rights reserved.</p>
+            <p>Built with passion and modern web technologies</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
-
