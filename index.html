@@ -1,19 +1,308 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>cwgroos</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <meta name="description" content="Portfolio website showcasing my skills, experience, and projects">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-<div id="body">
-    Hello World!<br/>
-    Experiments in web technologies!<br/><br/>
-    <a href="http://instagram.com/cwgroos" target=_blank><i class="fa fa-instagram fa-4x instagram"></i></a>
-    <a href="https://play.spotify.com/user/chris.gross" target=_blank><i class="fa fa-spotify fa-4x spotify"></i></a>
-    <a href="http://twitter.com/cwgroos" target=_blank><i class="fa fa-twitter fa-4x twitter"></i></a>
-    <a href="bart/index.html"><i class="fa fa-code fa-4x experiment"></i></a>
-</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">YourName</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Your Name</span>
+                </h1>
+                <p class="hero-subtitle">Software Engineer | Full Stack Developer | Problem Solver</p>
+                <p class="hero-description">
+                    I build exceptional digital experiences that make people's lives easier.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate software engineer with a strong foundation in full-stack development.
+                        I love creating elegant solutions to complex problems and continuously learning new technologies.
+                    </p>
+                    <p>
+                        With experience in modern web technologies, cloud platforms, and agile methodologies,
+                        I bring both technical expertise and collaborative skills to every project.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, contributing to open source,
+                        or sharing knowledge with the developer community.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">X+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">XX+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">XXX+</div>
+                        <div class="stat-label">Commits This Year</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Other</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">Testing</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Present</div>
+                        <h3>Senior Software Engineer</h3>
+                        <h4>Company Name</h4>
+                        <p>
+                            Led development of key features for flagship product, improving performance by 40%.
+                            Mentored junior developers and established best practices for the team.
+                        </p>
+                        <ul class="achievement-list">
+                            <li>Architected and implemented microservices architecture</li>
+                            <li>Reduced deployment time by 60% through CI/CD optimization</li>
+                            <li>Led team of 5 developers on critical projects</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <h3>Software Engineer</h3>
+                        <h4>Another Company</h4>
+                        <p>
+                            Developed and maintained full-stack applications serving thousands of users.
+                            Collaborated with cross-functional teams to deliver high-quality software.
+                        </p>
+                        <ul class="achievement-list">
+                            <li>Built responsive web applications using React and Node.js</li>
+                            <li>Implemented automated testing, increasing code coverage to 85%</li>
+                            <li>Optimized database queries, reducing load times by 50%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2020</div>
+                        <h3>Junior Developer</h3>
+                        <h4>Startup Name</h4>
+                        <p>
+                            Started my professional journey building features for a fast-paced startup environment.
+                            Learned modern development practices and agile methodologies.
+                        </p>
+                        <ul class="achievement-list">
+                            <li>Contributed to frontend and backend development</li>
+                            <li>Participated in code reviews and sprint planning</li>
+                            <li>Rapidly learned new technologies and frameworks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 1</h3>
+                        <p>
+                            A full-stack web application that helps users manage their tasks and productivity.
+                            Built with React, Node.js, and PostgreSQL.
+                        </p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 2</h3>
+                        <p>
+                            Real-time chat application with video calling capabilities.
+                            Implemented using WebRTC, Socket.io, and Express.
+                        </p>
+                        <div class="project-tags">
+                            <span>WebRTC</span>
+                            <span>Socket.io</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 3</h3>
+                        <p>
+                            E-commerce platform with payment integration and admin dashboard.
+                            Features include product management, order tracking, and analytics.
+                        </p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Django</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        I'm always open to new opportunities and interesting projects.
+                        Feel free to reach out if you'd like to connect!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@example.com" class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <span>your.email@example.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" class="contact-method" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon">💼</span>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/yourusername" class="contact-method" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon">💻</span>
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>Built with passion and modern web technologies</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
-
