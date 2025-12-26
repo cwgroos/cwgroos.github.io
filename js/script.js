@@ -1,4 +1,9 @@
 // ============================================
+// INITIALIZE LUCIDE ICONS
+// ============================================
+lucide.createIcons();
+
+// ============================================
 // THEME TOGGLE
 // ============================================
 const themeToggle = document.getElementById('themeToggle');
